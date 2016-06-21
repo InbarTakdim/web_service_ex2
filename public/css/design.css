@@ -1,0 +1,53 @@
+.sectionArea{
+   
+    margin-right:50px;
+    margin-left:50px;
+    float:left;
+   
+}
+
+
+
+
+
+.btn-default{
+  float: right;
+  
+     
+    
+}
+body{
+    font-family: "Georgia";
+}
+
+h1{
+    color:#5354a3;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.input-group{
+   margin:auto;
+   margin-top: 10px;
+}
+
+.table-striped{
+     width: 80%;
+    margin:auto;
+
+
+}
+
+body{
+    background: #F9F9F9;
+}
+
+.panel{
+    width: 80%;
+    margin:auto;
+    border-radius: 65px;
+    padding-bottom: 10px;
+    
+
+}

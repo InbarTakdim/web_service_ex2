@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="clientApp">
+<head>
+<title>Shenkar Student System</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/design.css">
+</head>
+<body >
+<h1>Students Info:</h1>
+<section >
+<section ng-controller="clientController" class="panel">
+    <section class="input-group">
+        <section class="sectionArea">
+        <label>
+        <input ng-model="studentId" class="form-control" placeholder="Enter Id..">
+        
+        <button type="button" ng-click="getStudentById()" class="btn btn-default">search by ID</button>
+        </label>
+        </section>
+        <section class="sectionArea">
+        <label>
+        <input ng-model="studentYear" class="form-control" placeholder="Enter Year..">
+        <button type="button" ng-click="getStudentByYear()" class="btn btn-default">search by YEAR</button>
+        </label>
+        </section>
+    </section>
+<h2>{{msg}}</h2>
+
+
+<table class="table table-striped">
+ <thead>
+ <tr>
+ <th>Id</th>
+ <th>Name</th>
+ <th>Grade  </th>
+ <th>Year</th>
+ </tr>
+ </thead>
+ <tbody ng-repeat="item in clientModel.items">
+     <tr>
+     <td>{{item.id}}</td>
+     <td>{{item.name}}</td>
+     <td>{{item.grade}}</td>
+     <td>{{item.year}}</td>
+     </tr>
+     
+ </tbody>
+</table>    
+</section>  
+</section>
+
+
+
+<script src="js/lib/angular/angular.min.js"></script>
+<script src="js/first.js"></script>
+</body>
+</html>
